@@ -3,7 +3,7 @@ import GitHubIcon from './GitHubIcon'
 
 const Footer = () => {
   return (
-    <footer className='bg-slate-500 w-full text-white flex justify-between absolute bottom-0 p-2 items-center'>
+    <footer className='bg-slate-500 w-full text-white flex justify-between absolute bottom-0 h-[6vh] p-2 items-center'>
         <div>
         Your own Password Manager 
         </div>
