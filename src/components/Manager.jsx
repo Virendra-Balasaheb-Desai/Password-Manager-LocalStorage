@@ -54,6 +54,16 @@ const Manager = () => {
             setPasswords([...passwords, { id: uuidv4(), ...form }])
             localStorage.setItem("passwords", JSON.stringify([...passwords, { id: uuidv4(), ...form }]))
             setForm({ url: '', username: '', password: '' })
+            toast('Password Saved!', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark"
+                });
             
         }
     }
@@ -69,6 +79,16 @@ const Manager = () => {
 
             setPasswords(passwords.filter((i) => { return i.id !== id }))
             localStorage.setItem("passwords", JSON.stringify(passwords.filter((i) => { return i.id !== id })))
+            toast('Password Deleted!', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark"
+                });
         }
         
     }
@@ -113,7 +133,6 @@ const Manager = () => {
                 draggable
                 pauseOnHover
                 theme="dark"
-                transition="Bounce"
             />
             <ToastContainer />
             <div className='my-4 text-center font-bold text-xl'>
@@ -138,7 +157,7 @@ const Manager = () => {
                 <div className='my-4 font-bold text-xl'>Passwords : </div>
                 {passwords.length === 0 ? <div className='text-lg'>No Password Saved</div> :
                 <div className="passwords">
-                    <table class="table-auto  text-center w-full">
+                    <table className="table-auto  text-center w-full">
                         <thead>
                             <tr className='bg-purple-400 text-white'>
                                 <th className='md: w-1/4 py-2 md:p-2'>Website</th>
