@@ -156,8 +156,8 @@ const Manager = () => {
             <section>
                 <div className='my-4 font-bold text-xl'>Passwords : </div>
                 {passwords.length === 0 ? <div className='text-lg'>No Password Saved</div> :
-                <div className="passwords">
-                    <table className="table-auto  text-center w-full">
+                <div className="passwords overflow-auto">
+                    <table className="table-auto text-center w-full min-w-[400px]">
                         <thead>
                             <tr className='bg-purple-400 text-white'>
                                 <th className='md: w-1/4 py-2 md:p-2'>Website</th>
