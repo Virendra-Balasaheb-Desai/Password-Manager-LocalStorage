@@ -151,7 +151,7 @@ const Manager = () => {
                 </div>
             </div>
             <div className="save flex justify-center my-4">
-                <button className={'bg-slate-400 py-2 px-4 rounded-full text-white flex items-center gap-2'} onClick={(e) => { handleSave(e) }}><SaveIcon className="size-6 cursor-pointer text-white"/><span>Save</span> </button>
+                <button className={'bg-purple-400 py-2 px-4 rounded-full text-white flex items-center gap-2 cursor-pointer'} onClick={(e) => { handleSave(e) }}><SaveIcon className="size-6 cursor-pointer text-white"/><span>Save</span> </button>
             </div>
             <section>
                 <div className='my-4 font-bold text-xl'>Passwords : </div>
@@ -190,8 +190,8 @@ const Manager = () => {
                                             </td>
                                             <td className=' py-2 md:p-2'>
                                                 <div className='flex justify-center items-center gap-2'>      
-                                                    <button className='text-white' onClick={(e)=>{handleEdit(e,item)}}><EditIcon className="size-5 cursor-pointer"/></button>
-                                                    <button className='text-white' onClick={(e)=>{handleDelete(e,item.id)}}><DeleteIcon  className="size-5 cursor-pointer"/></button>
+                                                    <button className='text-white cursor-pointer' onClick={(e)=>{handleEdit(e,item)}}><EditIcon className="size-5 cursor-pointer"/></button>
+                                                    <button className='text-white cursor-pointer' onClick={(e)=>{handleDelete(e,item.id)}}><DeleteIcon  className="size-5 cursor-pointer"/></button>
                                                 </div>
                                             </td>
                                         </tr>

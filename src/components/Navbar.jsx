@@ -4,14 +4,16 @@ import GitHubIcon from './GitHubIcon'
 
 const Navbar = () => {
     return (
-        <nav className='bg-slate-500 text-white flex justify-between h-[10vh] px-4 items-center'>
+        <nav className='bg-purple-500 text-white flex justify-between h-[10vh] px-4 items-center'>
             <div className='logo flex items-center gap-2 cursor-pointer'>
-                <SecurityPasswordIcon className="inline-block invert font-bold size-10 "/>
+                <SecurityPasswordIcon className="inline-block invert font-bold size-10 " />
                 <span className='text-xl font-bold cursor-pointer'> Password Manager  </span>
                 {/* <Github/> */}
-            </div> 
+            </div>
             <div className='git'>
-                <GitHubIcon className='size-12'/>
+                <a href="http://github.com/Virendra-Balasaheb-Desai/Password-Manager-LocalStorage" target="_blank" rel="noopener noreferrer">
+                    <GitHubIcon className='size-12' />
+                </a>
             </div>
         </nav>
     )
